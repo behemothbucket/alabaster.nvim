@@ -449,7 +449,7 @@ if vim.o.background == "dark" then
         ["@AlabasterString.lua"] = { link = "@variable" },
         ["@keyword.return.lua"] = { link = "@AlabasterConstant" },
         --- go
-        ["@keyword.go"] = { link = "@AlabasterDefinition" },
+        ["@keyword.go"] = { link = "@AlabasterConstant" },
         ["@function.builtin.go"] = { link = "@AlabasterDefinition" },
         ["@type.builtin.go"] = { link = "@AlabasterDefinition" },
         ["@keyword.import.go"] = { link = "@AlabasterConstant" },
