@@ -470,7 +470,7 @@ if vim.o.background == "dark" then
         ["@keyword.repeat.python"] = { link = "@AlabasterDefinition" },
         ["@keyword.exception.python"] = { link = "@AlabasterDefinition" },
         ["@keyword.import.python"] = { link = "@AlabasterConstant" },
-        ["@type.builtin.python"] = { link = "@AlabasterDefinition" },
+        ["@type.builtin.python"] = { link = "@AlabasterConstant" },
         ["@attribute.python"] = { link = "Operator" },
         ["@keyword.return.python"] = { link = "@AlabasterConstant" },
         --- dockerfile
