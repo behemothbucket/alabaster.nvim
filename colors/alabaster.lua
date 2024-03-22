@@ -468,7 +468,7 @@ if vim.o.background == "dark" then
         ["@constant.builtin.python"] = { link = "@AlabasterConstant" },
         ["@keyword.conditional.python"] = { link = "@AlabasterDefinition" },
         ["@keyword.repeat.python"] = { link = "@AlabasterDefinition" },
-        ["@keyword.exception.python"] = { link = "@AlabasterConstant" },
+        ["@keyword.exception.python"] = { link = "@AlabasterDefinition" },
         ["@keyword.import.python"] = { link = "@AlabasterConstant" },
         ["@type.builtin.python"] = { link = "@AlabasterDefinition" },
         ["@attribute.python"] = { link = "Operator" },
