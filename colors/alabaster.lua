@@ -456,8 +456,8 @@ if vim.o.background == "dark" then
 		["@keyword.repeat.lua"] = { link = "@AlabasterDefinition" },
 		["@module.builtin.lua"] = { link = "@variable" },
 		["@keyword.operator.lua"] = { link = "@AlabasterConstant" },
-		["@lsp.typemod.variable.definition.lua"] = { link = "@punctuation.delimiter" },
-		["@lsp.typemod.function.declaration.lua"] = { link = "@AlabasterDefinition" },
+		-- ["@lsp.typemod.variable.definition.lua"] = { link = "@punctuation.delimiter" },
+		-- ["@lsp.typemod.function.declaration.lua"] = { link = "@AlabasterDefinition" },
 		["@AlabasterString.lua"] = { link = "@variable" },
 		["@keyword.return.lua"] = { link = "@AlabasterConstant" },
 		--- go
@@ -884,6 +884,10 @@ end
 
 for group, hl in pairs(theme) do
 	vim.api.nvim_set_hl(0, group, hl)
+end
+
+for _, group in ipairs(vim.fn.getcompletion("@lsp", "highlight")) do
+	vim.api.nvim_set_hl(0, group, {})
 end
 
 -- vi:nowrap
