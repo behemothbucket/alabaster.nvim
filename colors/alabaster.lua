@@ -888,4 +888,9 @@ for group, hl in pairs(theme) do
 	vim.api.nvim_set_hl(0, group, hl)
 end
 
+-- Or, you can disable all semantic highlights by clearing all the groups
+for _, group in ipairs(vim.fn.getcompletion("@lsp", "highlight")) do
+	vim.api.nvim_set_hl(0, group, {})
+end
+
 -- vi:nowrap
