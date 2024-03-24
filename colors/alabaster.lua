@@ -190,12 +190,20 @@ if vim.o.background == "dark" then
 		-- Error = { bg = mistake.bg, fg = mistake.fg },
 		Error = { fg = mistake.fg },
 
+		Todo = { bg = "#0b1e33", fg = "#4BA8FF" },
 		["@comment.todo.comment"] = { bg = "#0b1e33", fg = "#4BA8FF" },
 		["@comment.note.comment"] = { bg = "#1b0e23", fg = "#FF57FF" },
 		["@comment.warning.comment"] = { bg = "#392a13", fg = "#FF9900" },
-		["@comment.error.comment"] = { bg = "#391a13", fg = diffchange },
-
-		Todo = { bg = "#d0d058", fg = bg },
+		["@comment.error.comment"] = { bg = "#391a13", fg = "#ff8b64" },
+		["@text.todo"] = { bg = "#0b1e33", fg = "#4BA8FF" },
+		["@text.note"] = { fg = "#ff57fF", bg = "#1b0e23" },
+		["@text.warning"] = { fg = "#ff9900", bg = "#392a13" },
+		["@text.danger"] = { fg = "#ff8b64", bg = "#391a13" },
+		["@text.uri"] = { bg = "#0b1e33", fg = "#4BA8FF", underline = true },
+		["@unchecked_list_item"] = { link = "normal" },
+		["@checked_list_item"] = { fg = "#696969", strikethrough = true },
+		["@text.todo.unchecked"] = { link = "@unchecked_list_item" },
+		["@text.todo.checked"] = { link = "@checked_list_item" },
 
 		--- Diagnostic
 		LspReferenceText = { bg = "#253437" },
@@ -295,8 +303,6 @@ if vim.o.background == "dark" then
 		["@tag"] = { fg = ansi.white },
 		["@tag.delimiter"] = { fg = punct_fg },
 		["@text"] = { fg = ansi.white },
-		["@text.note"] = { bg = "#1d292b", fg = ansi.blue },
-		["@text.warning"] = { bg = "#d0d058", fg = bg },
 
 		--- Theme specific
 		["@AlabasterConstant"] = { fg = const_fg },
