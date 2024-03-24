@@ -200,10 +200,10 @@ if vim.o.background == "dark" then
 		["@text.warning"] = { fg = "#ff9900", bg = "#392a13" },
 		["@text.danger"] = { fg = "#ff8b64", bg = "#391a13" },
 		["@text.uri"] = { bg = "#0b1e33", fg = "#4BA8FF", underline = true },
-		["@unchecked_list_item"] = { link = "normal" },
-		["@checked_list_item"] = { fg = "#696969", strikethrough = true },
-		["@text.todo.unchecked"] = { link = "@unchecked_list_item" },
-		["@text.todo.checked"] = { link = "@checked_list_item" },
+		-- ["@unchecked_list_item"] = { link = "normal" },
+		-- ["@checked_list_item"] = { fg = "#696969", strikethrough = true },
+		-- ["@text.todo.unchecked"] = { link = "@unchecked_list_item" },
+		-- ["@text.todo.checked"] = { link = "@checked_list_item" },
 
 		--- Diagnostic
 		LspReferenceText = { bg = "#253437" },
