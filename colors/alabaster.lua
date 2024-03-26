@@ -209,7 +209,6 @@ if vim.o.background == "dark" then
 		LspReferenceText = { bg = "#253437" },
 		LspReferenceRead = { bg = "#253437" },
 		LspReferenceWrite = { bg = "#253437", underline = 1, sp = active },
-		LspInfoBorder = { link = "@variable" },
 		LspCodeLens = { fg = "#5c5c5c" },
 		LspCodeLensSeparator = { fg = "#5c5c5c" },
 
@@ -483,7 +482,7 @@ if vim.o.background == "dark" then
 		["@keyword.repeat.python"] = { link = "@AlabasterDefinition" },
 		["@keyword.exception.python"] = { link = "@AlabasterDefinition" },
 		["@keyword.import.python"] = { link = "@AlabasterConstant" },
-		["@type.builtin.python"] = { link = "@AlabasterConstant" },
+		["@type.builtin.python"] = { link = "@AlabasterPunct" },
 		["@attribute.python"] = { link = "Operator" },
 		["@attribute.builtin.python"] = { link = "Operator" },
 		["@keyword.return.python"] = { link = "@AlabasterConstant" },
@@ -886,11 +885,6 @@ end
 
 for group, hl in pairs(theme) do
 	vim.api.nvim_set_hl(0, group, hl)
-end
-
--- Or, you can disable all semantic highlights by clearing all the groups
-for _, group in ipairs(vim.fn.getcompletion("@lsp", "highlight")) do
-	vim.api.nvim_set_hl(0, group, {})
 end
 
 -- vi:nowrap
