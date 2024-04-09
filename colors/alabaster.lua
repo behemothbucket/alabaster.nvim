@@ -463,6 +463,7 @@ if vim.o.background == "dark" then
 		--- go
 		["@keyword.go"] = { link = "@AlabasterConstant" },
 		["@function.builtin.go"] = { link = "@AlabasterDefinition" },
+		["@function.method.call.go"] = { link = "@AlabasterDefinition" },
 		["@type.builtin.go"] = { link = "@AlabasterDefinition" },
 		["@keyword.import.go"] = { link = "@AlabasterConstant" },
 		["@keyword.coroutine.go"] = { link = "@AlabasterConstant" },
@@ -483,6 +484,7 @@ if vim.o.background == "dark" then
 		["@keyword.exception.python"] = { link = "@AlabasterDefinition" },
 		["@keyword.import.python"] = { link = "@AlabasterConstant" },
 		["@type.builtin.python"] = { link = "@AlabasterPunct" },
+		["@function.builtin.python"] = { link = "@AlabasterPunct" },
 		["@attribute.python"] = { link = "Operator" },
 		["@attribute.builtin.python"] = { link = "Operator" },
 		["@keyword.return.python"] = { link = "@AlabasterConstant" },
