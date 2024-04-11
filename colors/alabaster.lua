@@ -507,6 +507,7 @@ if vim.o.background == "dark" then
 		-- LspSaga
 		["SagaBeacon"] = { bg = def_fg },
 		["SagaImpIcon"] = { fg = def_fg },
+		["SagaVirtLine"] = { fg = "#202829" },
 	}
 ------------------------------------------------------------------------------
 ---  Light theme
