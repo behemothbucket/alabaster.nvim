@@ -505,7 +505,7 @@ if vim.o.background == "dark" then
 		["@string.json"] = { link = "@String" },
 		["@property.json"] = { link = "@AlabasterDefinition" },
 		-- LspSaga
-		["SagaBeacon"] = { link = "@AlabasterConstant" },
+		["SagaBeacon"] = { bg = def_fg },
 	}
 ------------------------------------------------------------------------------
 ---  Light theme
