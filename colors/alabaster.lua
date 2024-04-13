@@ -91,7 +91,7 @@ if vim.o.background == "dark" then
 		EndOfBuffer = { fg = "#354c50", bg = "none" },
 		-- TermCursor   { }, -- cursor in a focused terminal
 		TermCursorNC = { fg = bg, bg = fg },
-		ErrorMsg = { fg = error, bg = "none" },
+		ErrorMsg = { fg = error, bg = mistake.bg },
 		VertSplit = { fg = "#2b3d40" },
 		Folded = { bg = "#182325", fg = "#7d7d7d" },
 		FoldColumn = { bg = bg, fg = "#4d4d4d" },
@@ -187,8 +187,8 @@ if vim.o.background == "dark" then
 		-- ("Ignore", below, may be invisible...)
 		-- Ignore         { }, -- (preferred) left blank, hidden  |hl-Ignore|
 
-		-- Error = { bg = mistake.bg, fg = mistake.fg },
-		Error = { fg = mistake.fg },
+		Error = { bg = mistake.bg, fg = mistake.fg },
+		-- Error = { fg = mistake.fg },
 
 		Todo = { bg = "#0b1e33", fg = "#4BA8FF" },
 		["@comment.todo.comment"] = { bg = "#0b1e33", fg = "#4BA8FF" },
@@ -217,14 +217,14 @@ if vim.o.background == "dark" then
 		DiagnosticWarn = { fg = warn },
 		DiagnosticHint = { fg = hint },
 		DiagnosticInfo = { fg = info },
-		-- DiagnosticVirtualTextError = { bg = '#350B0B', fg = '#D1503A' },
-		-- DiagnosticVirtualTextWarn = { bg = '#3F240A', fg = '#C8935D' },
-		-- DiagnosticVirtualTextHint = { bg = '#1D2B37', fg = '#7E9CB9' },
-		-- DiagnosticVirtualTextInfo = { bg = '#162C0B', fg = '#7BAC62' },
-		DiagnosticVirtualTextError = { bg = "none", fg = "#D1503A" },
-		DiagnosticVirtualTextWarn = { bg = "none", fg = "#C8935D" },
-		DiagnosticVirtualTextHint = { bg = "none", fg = "#7E9CB9" },
-		DiagnosticVirtualTextInfo = { bg = "none", fg = "#7BAC62" },
+		DiagnosticVirtualTextError = { bg = "#350B0B", fg = "#D1503A" },
+		DiagnosticVirtualTextWarn = { bg = "#3F240A", fg = "#C8935D" },
+		DiagnosticVirtualTextHint = { bg = "#1D2B37", fg = "#7E9CB9" },
+		DiagnosticVirtualTextInfo = { bg = "#162C0B", fg = "#7BAC62" },
+		-- DiagnosticVirtualTextError = { bg = "none", fg = "#D1503A" },
+		-- DiagnosticVirtualTextWarn = { bg = "none", fg = "#C8935D" },
+		-- DiagnosticVirtualTextHint = { bg = "none", fg = "#7E9CB9" },
+		-- DiagnosticVirtualTextInfo = { bg = "none", fg = "#7BAC62" },
 		DiagnosticUnderlineError = { underline = 0 },
 		DiagnosticUnderlineHint = { underline = 0 },
 		DiagnosticUnderlineInfo = { underline = 0 },
