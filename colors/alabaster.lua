@@ -91,7 +91,7 @@ if vim.o.background == "dark" then
 		EndOfBuffer = { fg = "#354c50", bg = "none" },
 		-- TermCursor   { }, -- cursor in a focused terminal
 		TermCursorNC = { fg = bg, bg = fg },
-		ErrorMsg = { fg = error, bg = "none" },
+		ErrorMsg = { fg = error, bg = mistake.bg },
 		VertSplit = { fg = "#2b3d40" },
 		Folded = { bg = "#182325", fg = "#7d7d7d" },
 		FoldColumn = { bg = bg, fg = "#4d4d4d" },
@@ -187,8 +187,8 @@ if vim.o.background == "dark" then
 		-- ("Ignore", below, may be invisible...)
 		-- Ignore         { }, -- (preferred) left blank, hidden  |hl-Ignore|
 
-		-- Error = { bg = mistake.bg, fg = mistake.fg },
-		Error = { fg = mistake.fg },
+		Error = { bg = mistake.bg, fg = mistake.fg },
+		-- Error = { fg = mistake.fg },
 
 		Todo = { bg = "#0b1e33", fg = "#4BA8FF" },
 		["@comment.todo.comment"] = { bg = "#0b1e33", fg = "#4BA8FF" },
