@@ -609,7 +609,8 @@ else
 		MoreMsg = { fg = ansi.green, bold = 1 },
 		NonText = { fg = "#696969" },
 		Normal = { bg = bg, fg = fg },
-		NormalFloat = { bg = float_bg },
+		-- NormalFloat = { bg = float_bg },
+		NormalFloat = { bg = "none" },
 		-- NormalNC     { }, -- normal text in non-current windows
 		FloatBorder = floatborder,
 		Pmenu = { bg = pmenu_bg },
