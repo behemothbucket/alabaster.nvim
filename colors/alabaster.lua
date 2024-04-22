@@ -107,9 +107,9 @@ if vim.o.background == "dark" then
 		MoreMsg = { fg = ansi.green, bold = 1 },
 		NonText = { fg = "#696969" },
 		-- Normal = { bg = "none", fg = fg },
-		-- NormalFloat = { bg = "none" },
+		NormalFloat = { bg = "none" },
 		Normal = { bg = bg, fg = fg },
-		NormalFloat = { bg = float_bg },
+		-- NormalFloat = { bg = float_bg },
 		-- NormalNC     { }, -- normal text in non-current windows
 		FloatBorder = { bg = "none", fg = "none" },
 		Pmenu = { bg = "none" },
