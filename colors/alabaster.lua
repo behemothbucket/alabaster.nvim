@@ -4,7 +4,7 @@ if vim.fn.exists("syntax_on") == 1 then
 end
 
 vim.g.colors_name = "alabaster"
-vim.g.alabaster_dim_comments = true
+-- vim.g.alabaster_dim_comments = true
 -- vim.g.alabaster_floatborder = true
 
 local theme
@@ -510,6 +510,8 @@ if vim.o.background == "dark" then
 		["SagaBeacon"] = { bg = def_fg },
 		["SagaImpIcon"] = { fg = def_fg },
 		["SagaVirtLine"] = { fg = "#202829" },
+		--Barbar
+		["BufferTabpageFill"] = { bg = "none" },
 	}
 ------------------------------------------------------------------------------
 ---  Light theme
