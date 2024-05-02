@@ -220,7 +220,11 @@ if vim.o.background == "dark" then
 		DiagnosticHint = { fg = hint },
 		DiagnosticInfo = { fg = info },
 		DiagnosticVirtualTextError = { bg = "#350B0B", fg = "#D1503A" },
-		DiagnosticVirtualTextWarn = { bg = "#3F240A", fg = "#C8935D" },
+		DiagnosticVirtualTextWarn = {
+			--bg = "#3F240A",
+			bg = "none",
+			fg = "#C8935D",
+		},
 		DiagnosticVirtualTextHint = { bg = "#1D2B37", fg = "#7E9CB9" },
 		-- DiagnosticVirtualTextInfo = { bg = '#162C0B', fg = '#7BAC62' },
 		-- DiagnosticVirtualTextError = { bg = "none", fg = "#D1503A" },
