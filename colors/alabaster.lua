@@ -93,7 +93,8 @@ if vim.o.background == "dark" then
 		-- Substitute   { }, -- |:substitute| replacement text highlighting
 		LineNr = { fg = "#5c5c5c" },
 		CursorLineNr = { fg = ansi.blue, bold = 1 },
-		MatchParen = { fg = "#1c1c1c", bg = "#293334" },
+		-- MatchParen = { fg = "#1c1c1c", bg = "#293334" },
+		MatchParen = { link = "@string.escape" },
 		ModeMsg = { fg = "#d7d787" }, -- 'showmode' message (e.g., "-- INSERT -- ")
 		-- MsgArea      { }, -- Area for messages and cmdline
 		-- MsgSeparator { }, -- Separator for scrolled messages, `msgsep` flag of 'display'
@@ -480,7 +481,7 @@ if vim.o.background == "dark" then
 		--- python
 		["@keyword.python"] = { fg = "#a76a9e", italic = 1 },
 		["@keyword.return.python"] = { fg = "#a76a9e", italic = 1 },
-		["@string.escape.python"] = { link = "Operator" },
+		-- ["@string.escape.python"] = { link = "Operator" },
 		["@constant.python"] = { link = "@AlabasterConstant" },
 		["@constructor.python"] = { link = "@AlabasterDefinition" },
 		["@keyword.conditional.python"] = { link = "@AlabasterConstant" },
