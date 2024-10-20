@@ -3,8 +3,6 @@ if vim.fn.exists("syntax_on") == 1 then
 end
 
 vim.g.colors_name = "alabaster"
-vim.g.alabaster_dim_comments = true
--- vim.g.alabaster_floatborder = true
 
 local theme
 ---@diagnostic disable: undefined-global
@@ -452,16 +450,16 @@ if vim.o.background == "dark" then
 		asmDirective = { fg = dim_comment },
 		nasmLabel = { link = "@AlabasterDefinition" },
 		--- lua
-		["@keyword.lua"] = { link = "@AlabasterConstant" },
-		["@keyword.conditional.lua"] = { link = "@AlabasterDefinition" },
-		["@function.builtin.lua"] = { link = "@AlabasterConstant" },
-		["@keyword.repeat.lua"] = { link = "@AlabasterDefinition" },
-		["@module.builtin.lua"] = { link = "@variable" },
-		["@keyword.operator.lua"] = { link = "@AlabasterConstant" },
+		-- ["@keyword.lua"] = { link = "@AlabasterConstant" },
+		-- ["@keyword.conditional.lua"] = { link = "@AlabasterDefinition" },
+		-- ["@function.builtin.lua"] = { link = "@AlabasterConstant" },
+		-- ["@keyword.repeat.lua"] = { link = "@AlabasterDefinition" },
+		-- ["@module.builtin.lua"] = { link = "@variable" },
+		-- ["@keyword.operator.lua"] = { link = "@AlabasterConstant" },
 		-- ["@lsp.typemod.variable.definition.lua"] = { link = "@punctuation.delimiter" },
 		-- ["@lsp.typemod.function.declaration.lua"] = { link = "@AlabasterDefinition" },
-		["@AlabasterString.lua"] = { link = "@variable" },
-		["@keyword.return.lua"] = { link = "@AlabasterConstant" },
+		-- ["@AlabasterString.lua"] = { link = "@variable" },
+		-- ["@keyword.return.lua"] = { link = "@AlabasterConstant" },
 		--- go
 		["@keyword.go"] = { link = "@AlabasterConstant" },
 		["@function.builtin.go"] = { link = "@AlabasterDefinition" },
@@ -478,7 +476,7 @@ if vim.o.background == "dark" then
 		--- gomod
 		["@keyword.gomod"] = { link = "@AlabasterConstant" },
 		-- Lua
-        ['@function.call.lua'] = { link = '@AlabasterDefinition' },
+		["@function.call.lua"] = { link = "@AlabasterDefinition" },
 		--- python
 		["@keyword.python"] = { fg = "#a76a9e", italic = 1 },
 		["@keyword.return.python"] = { fg = "#a76a9e", italic = 1 },
