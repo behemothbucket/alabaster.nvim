@@ -483,7 +483,7 @@ if vim.o.background == "dark" then
 		["@keyword.return.python"] = { fg = "#a76a9e", italic = 1 },
 		-- ["@string.escape.python"] = { link = "Operator" },
 		["@constant.python"] = { link = "@AlabasterConstant" },
-		["@constructor.python"] = { link = "@AlabasterDefinition" },
+		["@constructor.python"] = { fg = active },
 		["@keyword.conditional.python"] = { link = "@AlabasterConstant" },
 		["@keyword.repeat.python"] = { link = "@AlabasterConstant" },
 		["@keyword.exception.python"] = { link = "@AlabasterConstant" },
