@@ -102,7 +102,8 @@ if vim.o.background == "dark" then
 		NonText = { fg = "#696969" },
 		-- Normal = { bg = "none", fg = fg },
 		NormalFloat = { bg = "none" },
-		Normal = { bg = bg, fg = fg },
+		-- Normal = { bg = bg, fg = fg },
+		Normal = { bg = "none", fg = fg },
 		-- NormalFloat = { bg = float_bg },
 		-- NormalNC     { }, -- normal text in non-current windows
 		FloatBorder = { bg = "none", fg = "none" },
