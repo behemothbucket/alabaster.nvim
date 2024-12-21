@@ -198,6 +198,8 @@ if vim.o.background == "dark" then
 		DiagnosticVirtualTextWarn = { bg = "#3F240A", fg = "#C8935D" },
 		DiagnosticVirtualTextHint = { bg = "#1D2B37", fg = "#7E9CB9" },
 		DiagnosticVirtualTextInfo = { bg = "#162C0B", fg = "#7BAC62" },
+		DiagnosticUnderlineWarn = { bg = "#3F240A", fg = "#C8935D", undercurl = 1 },
+		DiagnosticUnderlineError = { bg = "#350B0B", fg = "#D1503A", undercurl = 1 },
 
 		--- Treesitter
 		TSAttribute = {},
