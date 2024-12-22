@@ -333,6 +333,7 @@ if vim.o.background == "dark" then
 		NeogitPopupSwitchDisabled = { fg = darker_fg },
 		NeogitPopupSwitchEnabled = { fg = ansi.cyan },
 		NeogitPopupSwitchKey = { fg = ansi.magenta },
+		NeogitDiffContextHighlight = { bg = "none" },
 		--- Fugitive
 		diffAdded = { link = "DiffAdd" },
 		diffRemoved = { link = "DiffDelete" },
@@ -440,6 +441,8 @@ if vim.o.background == "dark" then
 		-- Incline
 		InclineNormal = { bg = "#202829", fg = "#cecece" },
 		InclineNormalNC = { fg = "#202829" },
+
+		-- Neogit
 
 		-- Languages
 		--- bash
