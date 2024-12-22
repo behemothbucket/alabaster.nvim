@@ -334,6 +334,7 @@ if vim.o.background == "dark" then
 		NeogitPopupSwitchEnabled = { fg = ansi.cyan },
 		NeogitPopupSwitchKey = { fg = ansi.magenta },
 		NeogitDiffContextHighlight = { bg = "none" },
+		NeogitDiffHighlight = { bg = "none" },
 		--- Fugitive
 		diffAdded = { link = "DiffAdd" },
 		diffRemoved = { link = "DiffDelete" },
