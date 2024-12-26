@@ -333,8 +333,8 @@ if vim.o.background == "dark" then
 		NeogitPopupSwitchDisabled = { fg = darker_fg },
 		NeogitPopupSwitchEnabled = { fg = ansi.cyan },
 		NeogitPopupSwitchKey = { fg = ansi.magenta },
-		NeogitDiffContextHighlight = { bg = "none" },
-		NeogitDiffHighlight = { bg = "none" },
+		NeogitDiffContextHighlight = { bg = "none", fg = fg },
+		NeogitDiffHighlight = { bg = "none", fg = fg },
 		--- Fugitive
 		diffAdded = { link = "DiffAdd" },
 		diffRemoved = { link = "DiffDelete" },
@@ -376,8 +376,8 @@ if vim.o.background == "dark" then
 		HopNextKey2 = { fg = "#297567" },
 		HopUnmatched = { fg = "#3d3d3d" },
 		-- Flash
-		FlashLabel = { link = "String" },
-		FlashMatch = { fg = "#1c1c1c", bg = "#354c50" },
+		FlashMatch = { link = "String" },
+		FlashLabel = { fg = "#1c1c1c", bg = "#354c50" },
 		--- Lightspeed
 		LightspeedGreyWash = { fg = "#3d3d3d" },
 		--- checkhealth
@@ -442,8 +442,6 @@ if vim.o.background == "dark" then
 		-- Incline
 		InclineNormal = { bg = "#202829", fg = "#cecece" },
 		InclineNormalNC = { fg = "#202829" },
-
-		-- Neogit
 
 		-- Languages
 		--- bash
