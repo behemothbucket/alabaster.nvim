@@ -376,8 +376,8 @@ if vim.o.background == "dark" then
 		HopNextKey2 = { fg = "#297567" },
 		HopUnmatched = { fg = "#3d3d3d" },
 		-- Flash
-		FlashMatch = { link = "String" },
-		FlashLabel = { fg = "#1c1c1c", bg = "#354c50" },
+		FlashMatch = { fg = "#90a380" },
+		FlashLabel = { fg = const_fg, bg = "#263437" },
 		--- Lightspeed
 		LightspeedGreyWash = { fg = "#3d3d3d" },
 		--- checkhealth
