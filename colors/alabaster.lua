@@ -105,7 +105,8 @@ if vim.o.background == "dark" then
 		-- Normal = { bg = bg, fg = fg },
 		-- NormalFloat = { bg = float_bg },
 		-- NormalNC     { }, -- normal text in non-current windows
-		FloatBorder = { bg = "none", fg = "none" },
+		FloatBorder = floatborder,
+		-- FloatBorder = { bg = "none", fg = "none" },
 		Pmenu = { bg = "none" },
 		PmenuSel = { bg = "#354c50" },
 		PmenuSbar = { bg = "#212f31" },
