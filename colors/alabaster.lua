@@ -100,10 +100,10 @@ if vim.o.background == "dark" then
 		-- MsgSeparator { }, -- Separator for scrolled messages, `msgsep` flag of 'display'
 		MoreMsg = { fg = ansi.green, bold = 1 },
 		NonText = { fg = "#696969" },
-		Normal = { bg = "none", fg = fg },
-		NormalFloat = { bg = "none" },
-		-- Normal = { bg = bg, fg = fg },
-		-- NormalFloat = { bg = float_bg },
+		-- Normal = { bg = "none", fg = fg },
+		-- NormalFloat = { bg = "none" },
+		Normal = { bg = bg, fg = fg },
+		NormalFloat = { bg = float_bg },
 		-- NormalNC     { }, -- normal text in non-current windows
 		FloatBorder = floatborder,
 		-- FloatBorder = { bg = "none", fg = "none" },
