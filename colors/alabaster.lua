@@ -94,7 +94,8 @@ if vim.o.background == "dark" then
 		LineNr = { fg = "#5c5c5c" },
 		CursorLineNr = { fg = ansi.blue, bold = 1 },
 		-- MatchParen = { fg = "#1c1c1c", bg = "#293334" },
-		MatchParen = { link = "@string.escape" },
+		-- MatchParen = { link = "@string.escape" },
+		MatchParen = { underline = 1, sp = active },
 		ModeMsg = { fg = "#d7d787" }, -- 'showmode' message (e.g., "-- INSERT -- ")
 		-- MsgArea      { }, -- Area for messages and cmdline
 		-- MsgSeparator { }, -- Separator for scrolled messages, `msgsep` flag of 'display'
