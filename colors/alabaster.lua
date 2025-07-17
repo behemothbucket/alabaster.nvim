@@ -228,11 +228,11 @@ if vim.o.background == "dark" then
 		-- DiagnosticVirtualTextWarn = { bg = "none", fg = "#C8935D" },
 		-- DiagnosticVirtualTextHint = { bg = "none", fg = "#7E9CB9" },
 		-- DiagnosticVirtualTextInfo = { bg = "none", fg = "#7BAC62" },
-		DiagnosticUnderlineError = { underline = 0 },
+		DiagnosticUnderlineError = { underline = 1 },
+		DiagnosticUnderlineWarn = { underline = 1 },
 		DiagnosticUnderlineHint = { underline = 0 },
 		DiagnosticUnderlineInfo = { underline = 0 },
 		DiagnosticUnderlineOk = { underline = 0 },
-		DiagnosticUnderlineWarn = { underline = 0 },
 
 		--- Treesitter
 		TSAttribute = {},
