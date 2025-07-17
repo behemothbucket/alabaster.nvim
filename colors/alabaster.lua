@@ -720,7 +720,7 @@ else
 		--- Diagnostic
 		LspReferenceText = { bg = "#dadada" },
 		LspReferenceRdad = { bg = "#dadada" },
-		LspReferenceWrite = { bg = "#dadada", underline = 1, sp = active_blue },
+		LspReferenceWrite = { bg = "#dadada" },
 		LspCodeLens = { fg = "#999999" },
 		LspCodeLensSeparator = { fg = "#999999" },
 
