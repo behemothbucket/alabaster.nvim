@@ -207,7 +207,7 @@ if vim.o.background == "dark" then
 		--- Diagnostic
 		LspReferenceText = { bg = "#253437" },
 		LspReferenceRead = { bg = "#253437" },
-		LspReferenceWrite = { bg = "#253437", underline = 1, sp = active },
+		LspReferenceWrite = { bg = "#253437" },
 		LspCodeLens = { fg = "#5c5c5c" },
 		LspCodeLensSeparator = { fg = "#5c5c5c" },
 
