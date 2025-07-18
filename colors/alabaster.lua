@@ -307,7 +307,7 @@ if vim.o.background == "dark" then
 		["@AlabasterConstant"] = { fg = const_fg },
 		["@AlabasterDefinition"] = { fg = def_fg },
 		["@AlabasterPunct"] = { fg = punct_fg },
-		["@AlabasterString"] = { fg = string_fg },
+		-- ["@AlabasterString"] = { fg = string_fg },
 		["@AlabasterHashbang"] = { fg = dim_comment },
 		--- Gitsigns
 		GitSignsAdd = { fg = diffadd },
@@ -459,7 +459,7 @@ if vim.o.background == "dark" then
 		-- ["@keyword.operator.lua"] = { link = "@AlabasterConstant" },
 		-- ["@lsp.typemod.variable.definition.lua"] = { link = "@punctuation.delimiter" },
 		-- ["@lsp.typemod.function.declaration.lua"] = { link = "@AlabasterDefinition" },
-		-- ["@AlabasterString.lua"] = { link = "@variable" },
+		["@AlabasterString.lua"] = { link = "@variable" },
 		-- ["@keyword.return.lua"] = { link = "@AlabasterConstant" },
 		--- go
 		["@keyword.go"] = { link = "@AlabasterConstant" },
