@@ -828,6 +828,7 @@ else
 		["@AlabasterPunct"] = { fg = punct_fg },
 		["@AlabasterString"] = { fg = string_fg },
 		["@AlabasterHashbang"] = { fg = dim_comment },
+
 		--- Gitsigns
 		-- GitSignsAdd = { fg = "#6abf40" },
 		GitSignsAdd = { fg = diffadd },
@@ -961,6 +962,21 @@ else
 		["SagaVirtLine"] = { fg = "#202829" },
 		--Barbar
 		["BufferTabpageFill"] = { bg = "none" },
+		--- python
+		["@keyword.python"] = { fg = "#a76a9e", italic = 1 },
+		["@keyword.return.python"] = { fg = "#a76a9e", italic = 1 },
+		-- ["@string.escape.python"] = { link = "Operator" },
+		["@constant.python"] = { link = "@AlabasterConstant" },
+		["@constructor.python"] = { fg = active },
+		["@keyword.conditional.python"] = { link = "@AlabasterConstant" },
+		["@keyword.repeat.python"] = { link = "@AlabasterConstant" },
+		["@keyword.exception.python"] = { link = "@AlabasterConstant" },
+		["@keyword.import.python"] = { link = "@AlabasterConstant" },
+		["@type.builtin.python"] = { link = "@AlabasterDefinition" },
+		["@type.python"] = { link = "@AlabasterDefinition" },
+		["@keyword.operator.python"] = { link = "Operator" },
+		["@function.method.call.python"] = { link = "@AlabasterDefinition" },
+		["@function.builtin.python"] = { link = "@AlabasterDefinition" },
 	}
 end
 
