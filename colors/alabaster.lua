@@ -965,9 +965,10 @@ else
 		--- python
 		["@keyword.python"] = { fg = "#a76a9e", italic = 1 },
 		["@keyword.return.python"] = { fg = "#a76a9e", italic = 1 },
+		["@constructor.python"] = { fg = "#e6a344" },
 		-- ["@string.escape.python"] = { link = "Operator" },
 		["@constant.python"] = { link = "@AlabasterConstant" },
-		["@constructor.python"] = { fg = active },
+		-- ["@constructor.python"] = { fg = active },
 		["@keyword.conditional.python"] = { link = "@AlabasterConstant" },
 		["@keyword.repeat.python"] = { link = "@AlabasterConstant" },
 		["@keyword.exception.python"] = { link = "@AlabasterConstant" },
